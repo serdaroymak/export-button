@@ -1,0 +1,17 @@
+modules:
+  jira:issueAction:
+    - key: export-button-hello-world-issue-action
+      resource: main
+      resolver:
+        function: resolver
+      viewportSize: medium
+      title: Export for Assignment
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  id: ari:cloud:ecosystem::app/77106c74-e359-45bb-9508-272060335496
+  name: Export for Assignment
